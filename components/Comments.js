@@ -1,14 +1,11 @@
 import {gray, blue} from '../lib/styles';
+import Comment from './Comment';
 const Comments = ({comments}) => {
     return (
-        <div>
+        <div className="comment-list">
             {comments.map(comment => {
                 return (
-                    <div key={comment.id} className="comment">
-                        <div
-                            dangerouslySetInnerHTML={{__html: comment.content}}
-                            style={{padding: '5px 15px'}}
-                        />
+                    <div className="comment">
                         <div className="comment-details">
                             <div
                                 dangerouslySetInnerHTML={{
@@ -25,17 +22,23 @@ const Comments = ({comments}) => {
                                 }}
                             />
                         </div>
+                        <Comment comment={comment} />
                     </div>
                 );
             })}
             <style jsx>
                 {`
+                    .comment-list {
+                        max-width: 100%;
+                    }
                     .comment {
-                        border: 1px solid ${gray()};
+                        border: 1px solid ${gray(600)};
                         background: #fff;
                         margin: 10px 0;
                         font-size: 14px;
+                        padding-bottom: 15px;
                         font-weight: normal;
+                        word-wrap: break-word;
                     }
                     .comment-details {
                         background: ${blue()};

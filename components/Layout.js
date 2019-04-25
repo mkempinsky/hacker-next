@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {blue} from '../lib/styles';
 import Head from 'next/head';
+import Router from 'next/router';
 const Layout = props => {
     return (
         <div>
@@ -21,7 +22,10 @@ const Layout = props => {
                         </a>
                     </Link>
                 </nav>
-                <div className="content">{props.children}</div>
+
+                <div className="content">
+                    <div>{props.children}</div>
+                </div>
             </div>
             <style jsx>{`
                 nav {
@@ -43,8 +47,10 @@ const Layout = props => {
                     font-size: 30px;
                 }
                 .content {
-                    max-width: 800px;
                     margin: 100px auto;
+                    max-width: 900px;
+                    padding: 15px;
+                    display: block;
                 }
             `}</style>
         </div>

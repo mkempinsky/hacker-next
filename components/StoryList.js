@@ -24,13 +24,24 @@ const StoryList = props => {
             })}
             <style jsx>
                 {`
+                    h3 {
+                        margin: 0 0 10px 0;
+                    }
+                    p {
+                        margin: 0;
+                    }
+
                     .story {
                         background: #fff;
                         color: ${gray(800)};
-                        padding: 5px 15px;
+                        padding: 15px;
                         margin-bottom: 15px;
-                        border-radius: 10px;
                         border: 1px solid ${gray(600)};
+                    }
+                    .story-details {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
                     }
                 `}
             </style>

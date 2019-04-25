@@ -22,7 +22,6 @@ class Story extends React.Component {
     render() {
         const {story} = this.props;
         if (!story) return <Error />;
-        console.log(story);
         return (
             <Layout>
                 <a href={story.url} target="_blank">
@@ -41,6 +40,9 @@ class Story extends React.Component {
                     </div>
                 )}
                 <style jsx>{`
+                    h2 {
+                        margin: 0;
+                    }
                     .story-details {
                         display: flex;
                         justify-content: flex-start;

@@ -24,7 +24,51 @@ class MyDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta name="robots" content="no index, nofollow" />
                     <meta name="viewport" content="width=device-width" />
+
                     <style>{globalStyles}</style>
+
+                    <link rel="manifest" href="/static/manifest.json" />
+
+                    <meta name="mobile-web-app-capable" content="yes" />
+                    <meta name="apple-mobile-web-app-capable" content="yes" />
+                    <meta name="application-name" content="hacker-news" />
+                    <meta name="apple-mobile-web-app-title" content="hacker-news" />
+                    <meta name="theme-color" content="#4eb3d3" />
+                    <meta name="msapplication-navbutton-color" content="#4eb3d3" />
+                    <meta
+                        name="apple-mobile-web-app-status-bar-style"
+                        content="black-translucent"
+                    />
+                    <meta name="msapplication-starturl" content="/" />
+                    <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                    />
+
+                    <link
+                        rel="icon"
+                        type="image/png"
+                        sizes="512x512"
+                        href="/static/icon-152x152.png"
+                    />
+                    <link
+                        rel="apple-touch-icon"
+                        type="image/png"
+                        sizes="512x512"
+                        href="/static/icon-152x152.png"
+                    />
+                    <link
+                        rel="icon"
+                        type="image/png"
+                        sizes="192x192"
+                        href="/static/icon-192x192.png"
+                    />
+                    <link
+                        rel="apple-touch-icon"
+                        type="image/png"
+                        sizes="192x192"
+                        href="/static/icon-192x192.png"
+                    />
                 </Head>
                 <body>
                     <Main />

@@ -1,0 +1,20 @@
+{
+    "name": "Hacker News",
+    "short_name": "hacker-news",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#4eb3d3",
+    "icons": [
+        {
+            "src": "/static/icon-152x152.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
