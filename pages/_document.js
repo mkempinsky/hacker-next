@@ -18,7 +18,7 @@ class MyDocument extends Document {
                         rel="stylesheet"
                         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
                         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-                        crossorigin="anonymous"
+                        crossOrigin="anonymous"
                     />
                     <meta name="description" content="A site built in next.js" />
                     <meta charSet="utf-8" />
