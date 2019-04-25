@@ -11,16 +11,13 @@ const Layout = props => {
             </Head>
             <div className="container">
                 <nav>
-                    <Link href="/">
-                        <a>
-                            <img src="/static/logo.png" width="50px" />
-                        </a>
-                    </Link>
-                    <Link href="/">
-                        <a>
-                            <span className="main-title">Hacker News</span>
-                        </a>
-                    </Link>
+                    <a href="/">
+                        <img src="/static/logo-2.png" width="50px" />
+                    </a>
+
+                    <a href="/">
+                        <span className="main-title">Hacker News</span>
+                    </a>
                 </nav>
 
                 <div className="content">
