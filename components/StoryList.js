@@ -13,9 +13,7 @@ const StoryList = props => {
                         </a>
                         <div className="story-details">
                             <p>{story.points || 0} Points</p>
-                            <Link
-                                as={`story/${story.id}/comments`}
-                                href={`/story?id=${story.id}`}>
+                            <Link href={`/story?id=${story.id}`}>
                                 <a>{story.comments_count || 0} Comments</a>
                             </Link>
                         </div>

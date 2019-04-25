@@ -5,7 +5,7 @@ const Comments = ({comments}) => {
         <div className="comment-list">
             {comments.map(comment => {
                 return (
-                    <div className="comment">
+                    <div className="comment" key={comment.id}>
                         <div className="comment-details">
                             <div
                                 dangerouslySetInnerHTML={{

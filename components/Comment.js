@@ -11,7 +11,7 @@ const Comment = ({comment}) => {
                 <div className="nested-comments">
                     {comment.comments.map(nestedComment => {
                         return (
-                            <>
+                            <React.Fragment key={nestedComment.id}>
                                 <div
                                     className="user"
                                     dangerouslySetInnerHTML={{
@@ -20,7 +20,7 @@ const Comment = ({comment}) => {
                                 />
 
                                 <Comment key={nestedComment.id} comment={nestedComment} />
-                            </>
+                            </React.Fragment>
                         );
                     })}
                 </div>
