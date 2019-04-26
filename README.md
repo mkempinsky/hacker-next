@@ -13,3 +13,5 @@ The application uses service workers to allow users to visit the application whi
 4. You may change the name or leave the name as 'hacker-news'
 5. Select 'Add'
 6. You now have Hacker News on your iphone! ⚡️
+
+
