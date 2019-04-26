@@ -2,6 +2,9 @@
 
 Live at https://hacker-news-nextjs.herokuapp.com/
 
+This is a progressive web app built in next.js
+The application uses service workers to allow users to visit the application while offline
+
 
 # Install on Iphone
 1. Visit https://hacker-news-nextjs.herokuapp.com/ in Safari
